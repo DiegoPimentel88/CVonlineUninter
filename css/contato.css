@@ -1,0 +1,125 @@
+/* Declaração das variaveis de cores */
+:root {
+    --preto-principal: #000;
+    --azul-principal: #0060FF;
+    --azul-secundario: #4289FE;
+    --azul-escuro-principal: #022868;
+    --azul-escuro-secundario: #033A95;
+    --branco-principal: #ffff;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco-principal);
+}
+
+body{
+    background-image: linear-gradient(var(--preto-principal), var(--azul-escuro-principal), var(--preto-principal));
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/*Estlização do cabeçalho*/
+
+.cabecalho {
+    background-color: var(--preto-principal);
+
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.links{
+    text-decoration: none;
+}
+
+
+.titulo{
+    text-decoration: none;
+    margin-left: 40px;
+    margin: 0 auto;
+}
+
+/*Estilização do container*/
+
+.informacoes-contato{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-escuro-secundario);
+    margin: 20px auto;
+    border-radius: 10px;
+    list-style: none;
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    gap: 35px;
+}
+
+
+
+input, textarea{
+    background-color: var(--azul-escuro-principal);
+    border: none;
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: #000;
+}
+
+/*Estilização dos botões*/
+
+
+.botoes-opcoes{
+    display: flex;
+    justify-content: center;
+    margin: 40px 90px;
+    gap: 10px;
+}
+
+.botao-enviar{
+    background-color: var(--azul-escuro-principal);
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.botao-enviar:hover{
+    cursor: pointer;
+}
+
+.botoes{
+    background-image: linear-gradient( to left, var(--preto-principal), var(--azul-escuro-secundario));
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.botoes:hover{
+    cursor: pointer;
+}
+
+
+
+/*Estilização do rodapé*/
+
+.rodape{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--preto-principal);
+} 
+
+ .direito-autoral{
+    font-size: 20px;
+    text-align: center;
+}

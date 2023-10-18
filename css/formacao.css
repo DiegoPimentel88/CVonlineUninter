@@ -1,0 +1,111 @@
+/* Declaração das variaveis de cores */
+:root {
+    --preto-principal: #000;
+    --azul-principal: #0060FF;
+    --azul-secundario: #4289FE;
+    --azul-escuro-principal: #022868;
+    --azul-escuro-secundario: #033A95;
+    --branco-principal: #ffff;
+    
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco-principal);
+}
+
+
+body{
+    background-image: linear-gradient(var(--preto-principal), var(--azul-escuro-principal), var(--preto-principal));
+    margin: 0  auto;
+    height: 100vh;
+}
+
+
+/*Estlização do cabeçalho*/
+
+.cabecalho {
+    background-color: var(--preto-principal);
+
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.links{
+    text-decoration: none;
+}
+
+/*Estilização do container*/
+
+
+.quadro-formacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+
+.formacoes{
+    background-color: var(--azul-escuro-secundario);
+    border-radius: 10px;
+    width: 800px;
+    height: 100px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.certificado{
+    float: right;
+    width: 190px;
+    height: 100px;
+}
+
+.titulo{
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+/*Estilização dos botões*/
+
+.botoes-opcoes{
+    display: flex;
+    justify-content: center;
+    margin: 40px 90px;
+    gap: 10px;
+}
+
+.botoes{
+    background-image: linear-gradient( to left, var(--preto-principal), var(--azul-escuro-secundario));
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.botoes:hover{
+    cursor: pointer;
+}
+
+/*Estilização do rodapé*/
+
+.rodape{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--preto-principal);
+} 
+
+ .direito-autoral{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}

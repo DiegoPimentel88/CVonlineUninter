@@ -1,0 +1,119 @@
+/* Declaração das variaveis de cores */
+:root {
+    --preto-principal: #000;
+    --azul-principal: #0060FF;
+    --azul-secundario: #4289FE;
+    --azul-escuro-principal: #06337E;
+    --azul-escuro-secundario: #033A95;
+    --branco-principal: #ffff;
+    
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco-principal);
+}
+
+
+body{
+    background-image: linear-gradient(var(--preto-principal), var(--azul-escuro-principal), var(--preto-principal));
+    margin: 0  auto;
+    height: 100vh;
+}
+
+/*Estlização do cabeçalho*/
+
+.cabecalho {
+    background-color: var(--preto-principal);
+
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.links{
+    text-decoration: none;
+}
+
+
+.titulo{
+    text-decoration: none;
+    margin-left: 40px;
+    margin: 0 auto;
+}
+
+.titulo-index{
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.botoes-opcoes{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    margin: 80px;
+    gap: 10px;
+}
+
+
+.botoes{
+    background-color: var(--azul-escuro-secundario);
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.botoes:hover{
+    cursor: pointer;
+}
+
+
+
+
+/*Estilização do primeiro quadro*/
+
+
+
+.quadro-diego{
+    background-color: var(--azul-escuro-secundario);
+    border: 1px var(--azul-escuro-principal) solid;
+    width: 850px;
+    height: 420px;
+    padding: 10px;
+    margin: 10px 40px;
+    list-style: none;
+}
+
+.imagem-diego{
+    height: 330px;
+    width: 330px;
+    float: right
+}
+
+.informacoes{
+    padding: 10px;
+}
+
+/*Estilização do rodapé*/
+
+.rodape{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--preto-principal);
+}
+
+.direito-autoral{
+    font-size: 20px;
+    text-align: center;
+}
